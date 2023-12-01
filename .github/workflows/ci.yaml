@@ -2,8 +2,6 @@ name: CI
 on: [push]
 jobs:
   run-tests:
-    name: Lint and Test
-    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code

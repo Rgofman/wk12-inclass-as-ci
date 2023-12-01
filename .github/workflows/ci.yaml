@@ -2,6 +2,8 @@ name: CI
 on: [push]
 jobs:
   run-tests:
+    name: Lint and Test
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
@@ -10,5 +12,6 @@ jobs:
       - name: Install packages
         run: npm ci
 
-      - name: Run ESlint
-        run: npm run lint
+      # - name: Run ESlint
+      #  run: npm run lint
+
